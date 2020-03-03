@@ -1,7 +1,7 @@
 /*
  * @Author: fyra
  * @Date: 2020-03-02 19:46:50
- * @LastEditTime: 2020-03-02 23:14:44
+ * @LastEditTime: 2020-03-03 08:35:56
  * @LastEditors: Please set LastEditors
  * @Description: 简单内存管理
  * @FilePath: /mem/myheap.c
@@ -9,7 +9,7 @@
  #include "myheap.h"
 
  mem_lut mem_tab[LUT_LEN];//内存管理表
- uint8_t *mem_pool[MAX_MEM_SIZE];//内存池
+ uint8_t mem_pool[MAX_MEM_SIZE];//内存池
 
 /**
  * 函数名:  mem_init
