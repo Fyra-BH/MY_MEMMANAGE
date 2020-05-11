@@ -30,7 +30,7 @@ VPATH:=$(SRCDIRS)
 $(BUILD_DIR)/%.o: %.c Makefile | $(BUILD_DIR)
 	$(CC) -c -g -m32 $<  $(INCLUDE) -o $@
 
-$(TARGET):$(OBJECTS)
+$(BUILD_DIR)/$(TARGET):$(OBJECTS)
 	$(CC) $(OBJECTS) -m32 -o $@ $(LIBS)
 
 $(BUILD_DIR):
@@ -39,7 +39,6 @@ $(BUILD_DIR):
 clean:
 # echo CFILES=$(CFILES)
 	rm -rf $(BUILD_DIR)
-	rm -f $(TARGET)
 
 
 
