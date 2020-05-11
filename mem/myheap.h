@@ -17,7 +17,7 @@
 //内存池大小
 #define MAX_MEM_SIZE    (1024*1024*16)
 
-#define DEBUG
+// #define DEBUG
 
 /**
  * 查找表结构体
